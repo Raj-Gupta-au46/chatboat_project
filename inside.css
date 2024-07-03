@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3338;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #00777b;
+}
+
+
+.content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between cards */
+    padding: 40px 20px;
+}
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.vital{
+    text-align: center;
+}
+.card {
+    flex-basis: calc(30% - 20px); /* Adjust card width */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Space between rows of cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #00777b;
+}
+
+.shape-analyser {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.shape-analyser h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.shape-analyser p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    border: 2px solid #009688;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid #009688;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.section-title h3 {
+    color: #009688;
+    margin-top: 0;
+}
+
+.section-content {
+    margin-top: 10px;
+}
+
+.radio-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Styles for expandable section */
+.assignment-section {
+    margin: 20px;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.expand-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.assignment-content {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+}
+
+.assignment-content.active {
+    display: block; /* Display when active */
+}
+
+.assignment-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.assignment-content ul li {
+    margin-bottom: 5px;
+}
+

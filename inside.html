@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myLongevity</title>
+     <link rel="stylesheet" href="inside.css">
+     <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">MY-LONGEVITY</div>
+        <a href="cahtbaot.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Knowledge</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="content-cards">
+        <div class="card">
+            <h2>Take our free SHAPE Analyser</h2>
+            <p>Get started by analyzing your SHAPE for insights.</p>
+            <button class="card-button">READ MORE</button>
+        </div>
+        <div class="card">
+            <h2>Understand your SHAPE Results</h2>
+            <p>Learn about your results and what they mean for your longevity.</p>
+            <button class="card-button">READ MORE</button>
+        </div>
+        <div class="card">
+            <h2>Begin your personal Longevity Planning</h2>
+            <p>Create a plan to optimize your future well-being.</p>
+            <button class="card-button">READ MORE</button>
+        </div>
+    </div>
+    <div class="shape-analyser">
+        <h2>THE SHAPE ANALYSER</h2>
+        <p>The five SHAPE Analyser areas cover most of what affects your longevity. Just choose the answer which is most like you, even if it's not a perfect fit. The Analyser is designed for people 45 and over. If already a subscriber, login first before doing the SHAPE Analyser. Your Longevity Plan will be immediately updated, and you can decide on the actions suggested. All previous actions remain for your review.</p>
+        <!-- Add icons and other content as needed -->
+    </div>
+    <div class="line">
+        <h1 class="vital">VITAL Longevity Assessment</h1>
+        <div class="assignment-section" id="vital-longevity-section">
+            <button class="expand-btn" onclick="toggleAssignment()">Expand Assignment</button>
+            <div class="assignment-content" id="assignment-content">
+    <div>
+        <div>
+            <div class="container">
+                
+                <div class="section">
+                    <div class="section-title">
+                        <h3>T - Temperament:</h3>
+                    </div>
+                    <div class="section-content">
+                        <div class="radio-group">
+                            <label>6. How would you rate your overall stress level?</label><br>
+                            <input type="radio" name="stress-level" id="low" value="low">
+                            <label for="low">a) Low</label>
+                            
+                            <input type="radio" name="stress-level" id="moderate" value="moderate">
+                            <label for="moderate">b) Moderate</label>
+                            <br>
+                            
+                            <input type="radio" name="stress-level" id="high" value="high">
+                            <label for="high">c) High</label>
+                            
+                            <input type="radio" name="stress-level" id="very-high" value="very-high">
+                            <label for="very-high">d) Very high</label>
+                            <br>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <label>7. Do you practice any stress-reduction techniques?</label><br>
+                            <input type="radio" name="stress-techniques" id="daily-stress" value="daily-stress">
+                            <label for="daily-stress">a) Yes, daily</label>
+                            
+                            <input type="radio" name="stress-techniques" id="several-times-stress" value="several-times-stress">
+                            <label for="several-times-stress">b) Yes, several times a week</label>
+                            <br>
+                            
+                            <input type="radio" name="stress-techniques" id="occasionally-stress" value="occasionally-stress">
+                            <label for="occasionally-stress">c) Occasionally</label>
+                            
+                            <input type="radio" name="stress-techniques" id="never-stress" value="never-stress">
+                            <label for="never-stress">d) Never</label>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="section">
+                    <div class="section-title">
+                        <h3>A - Atmosphere:</h3>
+                    </div>
+                    <div class="section-content">
+                        <div class="radio-group">
+                            <label>8. How would you describe your living environment?</label><br>
+                            <input type="radio" name="living-environment" id="healthy-supportive" value="healthy-supportive">
+                            <label for="healthy-supportive">a) Very healthy and supportive</label>
+                            
+                            <input type="radio" name="living-environment" id="mostly-healthy" value="mostly-healthy">
+                            <label for="mostly-healthy">b) Mostly healthy</label>
+                            <br>
+                            
+                            <input type="radio" name="living-environment" id="somewhat-challenging" value="somewhat-challenging">
+                            <label for="somewhat-challenging">c) Somewhat challenging</label>
+                            
+                            <input type="radio" name="living-environment" id="unhealthy-stressful" value="unhealthy-stressful">
+                            <label for="unhealthy-stressful">d) Unhealthy or stressful</label>
+                            <br>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <label>9. How often do you socialize with friends or family?</label><br>
+                            <input type="radio" name="socialize" id="daily-socialize" value="daily-socialize">
+                            <label for="daily-socialize">a) Daily</label>
+                            
+                            <input type="radio" name="socialize" id="several-times-socialize" value="several-times-socialize">
+                            <label for="several-times-socialize">b) Several times a week</label>
+                            <br>
+                            
+                            <input type="radio" name="socialize" id="once-week" value="once-week">
+                            <label for="once-week">c) Once a week</label>
+                            
+                            <input type="radio" name="socialize" id="rarely-socialize" value="rarely-socialize">
+                            <label for="rarely-socialize">d) Rarely</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">
+                            <h3>T - Temperament:</h3>
+                        </div>
+                        <div class="section-content">
+                            <div class="radio-group">
+                                <label>6. How would you rate your overall stress level?</label><br>
+                                <input type="radio" name="stress-level" id="low" value="low">
+                                <label for="low">a) Low</label>
+                                
+                                <input type="radio" name="stress-level" id="moderate" value="moderate">
+                                <label for="moderate">b) Moderate</label>
+                                <br>
+                                
+                                <input type="radio" name="stress-level" id="high" value="high">
+                                <label for="high">c) High</label>
+                                
+                                <input type="radio" name="stress-level" id="very-high" value="very-high">
+                                <label for="very-high">d) Very high</label>
+                                <br>
+                            </div>
+                            
+                            <div class="radio-group">
+                                <label>7. Do you practice any stress-reduction techniques?</label><br>
+                                <input type="radio" name="stress-techniques" id="daily-stress" value="daily-stress">
+                                <label for="daily-stress">a) Yes, daily</label>
+                                
+                                <input type="radio" name="stress-techniques" id="several-times-stress" value="several-times-stress">
+                                <label for="several-times-stress">b) Yes, several times a week</label>
+                                <br>
+                                
+                                <input type="radio" name="stress-techniques" id="occasionally-stress" value="occasionally-stress">
+                                <label for="occasionally-stress">c) Occasionally</label>
+                                
+                                <input type="radio" name="stress-techniques" id="never-stress" value="never-stress">
+                                <label for="never-stress">d) Never</label>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">
+                            <h3>A - Atmosphere:</h3>
+                        </div>
+                        <div class="section-content">
+                            <div class="radio-group">
+                                <label>8. How would you describe your living environment?</label><br>
+                                <input type="radio" name="living-environment" id="healthy-supportive" value="healthy-supportive">
+                                <label for="healthy-supportive">a) Very healthy and supportive</label>
+                                
+                                <input type="radio" name="living-environment" id="mostly-healthy" value="mostly-healthy">
+                                <label for="mostly-healthy">b) Mostly healthy</label>
+                                <br>
+                                
+                                <input type="radio" name="living-environment" id="somewhat-challenging" value="somewhat-challenging">
+                                <label for="somewhat-challenging">c) Somewhat challenging</label>
+                                
+                                <input type="radio" name="living-environment" id="unhealthy-stressful" value="unhealthy-stressful">
+                                <label for="unhealthy-stressful">d) Unhealthy or stressful</label>
+                                <br>
+                            </div>
+                            
+                            <div class="radio-group">
+                                <label>9. How often do you socialize with friends or family?</label><br>
+                                <input type="radio" name="socialize" id="daily-socialize" value="daily-socialize">
+                                <label for="daily-socialize">a) Daily</label>
+                                
+                                <input type="radio" name="socialize" id="several-times-socialize" value="several-times-socialize">
+                                <label for="several-times-socialize">b) Several times a week</label>
+                                <br>
+                                
+                                <input type="radio" name="socialize" id="once-week" value="once-week">
+                                <label for="once-week">c) Once a week</label>
+                                
+                                <input type="radio" name="socialize" id="rarely-socialize" value="rarely-socialize">
+                                <label for="rarely-socialize">d) Rarely</label>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <div class="section-title">
+                            <h3>L - Lifestyle:</h3>
+                        </div>
+                        <div class="section-content">
+                            <div class="radio-group">
+                                <label>10. How would you describe your diet?</label><br>
+                                <input type="radio" name="diet" id="healthy-balanced" value="healthy-balanced">
+                                <label for="healthy-balanced">a) Very healthy and balanced</label>
+                                
+                                <input type="radio" name="diet" id="mostly-healthy" value="mostly-healthy">
+                                <label for="mostly-healthy">b) Mostly healthy</label>
+                                <br>
+                                
+                                <input type="radio" name="diet" id="somewhat-unhealthy" value="somewhat-unhealthy">
+                                <label for="somewhat-unhealthy">c) Somewhat unhealthy</label>
+                                
+                                <input type="radio" name="diet" id="very-unhealthy" value="very-unhealthy">
+                                <label for="very-unhealthy">d) Very unhealthy</label>
+                                <br>
+                            </div>
+                            
+                            <div class="radio-group">
+                                <label>11. On average, how many hours of sleep do you get per night?</label><br>
+                                <input type="radio" name="sleep-hours" id="7-9-hours" value="7-9-hours">
+                                <label for="7-9-hours">a) 7-9 hours</label>
+                                
+                                <input type="radio" name="sleep-hours" id="6-7-hours" value="6-7-hours">
+                                <label for="6-7-hours">b) 6-7 hours</label>
+                                <br>
+                                
+                                <input type="radio" name="sleep-hours" id="5-6-hours" value="5-6-hours">
+                                <label for="5-6-hours">c) 5-6 hours</label>
+                                
+                                <input type="radio" name="sleep-hours" id="less-than-5-more-than-9" value="less-than-5-more-than-9">
+                                <label for="less-than-5-more-than-9">d) Less than 5 hours or more than 9 hours</label>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    
+                    <button>Submit</button>
+                    
+    </div>
+    </div>
+    </div>
+</body>
+</html>

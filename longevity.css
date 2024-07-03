@@ -1,0 +1,338 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Hero Section Styles */
+
+.hero {
+    background-image: url("/avenue-815297_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+/* Content Section Styles */
+
+.content {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.content h2 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+/* Australian Life Tables Section Styles */
+
+.australian-life-tables {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.australian-life-tables h2 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+/* More About Longevity Section Styles */
+
+.more-about-longevity {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.more-about-longevity h2 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.more-about-longevity p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.more-about-longevity img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:first-child {
+    font-size: 14px;
+}
+
+footer p:last-child {
+    font-size: 12px;
+}
+
+.featured-articles {
+    background-color: #F5F5F5;
+    padding: 40px;
+  }
+  .article {
+    display: inline-block;
+    margin-right: 30px; /* Adjust spacing as needed */
+    width: calc(33% - (2 * (30px /3))); /* Adjust width as needed */
+    vertical-align: top; /* Align articles at the top */
+  }
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+  .article-title {
+    color: #000000;
+  }
+  .article-button {
+    background-color: #FF9800;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .article-read-more {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .header {
+    background-color: #8BC34A;
+    padding: 20px;
+    text-align: center;
+  }
+  .header-button {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+
+  .container1 {
+    width: 80%;
+    margin: auto;
+}
+.header1 {
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.sub-header1 {
+    background-color: #4db6ac;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.steps-container {
+   display:flex; 
+   justify-content:center; 
+   align-items:center; 
+   padding-top :20px; 
+   gap :30px
+ }
+ .step{
+     flex-basis :30%;
+     border-radius :10px; 
+     box-shadow :0 4px 8px rgba(0,0,0,.05);
+     padding :20px; 
+     text-align:center
+  }  
+  .step h2{
+      margin-bottom :15px
+  }  
+  .step p{
+      font-size:.9em
+  } 
+
+  .container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.article {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.article img {
+    width: 150px;
+    height: 175px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.article-content {
+    flex: 1;
+}
+.article-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.article-description {
+    font-size: 0.9em;
+    color: #555;
+}
+.read-more {
+
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.read-more a {
+    color: #007bff;
+    text-decoration: none;
+}

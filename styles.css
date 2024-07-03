@@ -2,13 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+
+        background-image: url('/3132.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: Arial, sans-serif;
+
+    
 }
 
 .chatbot {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 300px;
+    width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
@@ -28,6 +37,33 @@ body {
     align-items: center;
     cursor: pointer;
     font-weight: bold;
+    color: #4a4a4a;
+}
+
+.chatbot-header .arrow {
+    font-size: 12px;
+    color: #888;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.start-here {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4a4a4a; /* Changed to dark grey */
+}
+
+.start-here .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4a4a4a; /* Changed to dark grey */
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .chatbot-body {
@@ -47,6 +83,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    color: #4a4a4a;
 }
 
 .chatbot-option.selected {
@@ -64,6 +101,119 @@ body {
     cursor: pointer;
 }
 
-.arrow {
-    font-size: 12px;
+.chatbot-body p {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hi {
+    background-color: #f2f2f2;
+    border-color: #ccc;
+}
+
+.get {
+    background-color: #e8e8e8;
+    border-color: #bbb;
+}
+
+.what {
+    background-color: #e0e0e0;
+    border-color: #aaa;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.chatbot-header span.animated {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slideIn 1s steps(30, end) forwards;
+}
+
+
+
+/* Typography */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+/* Custom Styles */
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+}
+
+main > .intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+.icons-social a {
+  text-decoration: none;
+}
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
 }
